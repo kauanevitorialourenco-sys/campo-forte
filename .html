@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Forte - Futuro Sustentável</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1b5e20, #4caf50);
+    color:white;
+    text-align:center;
+}
+
+section{
+    padding:60px 20px;
+}
+
+h1{
+    font-size:55px;
+    text-shadow:4px 4px 8px black;
+}
+
+h2{
+    font-size:35px;
+    color:#ffeb3b;
+}
+
+p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.card{
+    background:white;
+    color:black;
+    padding:25px;
+    margin:20px auto;
+    width:85%;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.6);
+}
+
+img{
+    width:280px;
+    border-radius:15px;
+    margin:15px;
+    box-shadow:0 0 10px black;
+}
+
+button{
+    padding:10px 20px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+    background:#2e7d32;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+footer{
+    background:#0d3b12;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- CAPA -->
+<section>
+<h1>🌱 Agro Forte</h1>
+<h2>Futuro Sustentável</h2>
+<p><b>Equilíbrio entre produção e meio ambiente</b></p>
+
+<img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9">
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
+<img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3">
+</section>
+
+<!-- INTRODUÇÃO -->
+<section>
+<h2>🌾 Introdução</h2>
+<div class="card">
+<p>O agronegócio é um dos setores mais importantes para a economia e para a alimentação da população mundial. 
+Com o crescimento da população, a produção de alimentos precisa aumentar, mas sem causar danos ao meio ambiente.</p>
+
+<p>Por isso, surge a necessidade de unir tecnologia, inovação e sustentabilidade, garantindo produtividade e preservação da natureza ao mesmo tempo.</p>
+</div>
+</section>
+
+<!-- TECNOLOGIA -->
+<section>
+<h2>🚜 Tecnologia no Campo</h2>
+<div class="card">
+<p><b>Agricultura de Precisão:</b> Utiliza drones, sensores e GPS para monitorar lavouras.</p>
+<p><b>Monitoramento por Satélite:</b> Permite acompanhar o crescimento das plantas e identificar problemas rapidamente.</p>
+<p><b>Irrigação Inteligente:</b> Economiza água ao irrigar somente quando necessário.</p>
+<p><b>Máquinas Modernas:</b> Reduzem desperdícios e aumentam a produtividade.</p>
+</div>
+
+<img src="https://images.unsplash.com/photo-1581091870627-3e0a42b8f69b">
+<img src="https://images.unsplash.com/photo-1602524819489-d1b33a9b5c52">
+</section>
+
+<!-- SUSTENTABILIDADE -->
+<section>
+<h2>🌍 Sustentabilidade no Agro</h2>
+<div class="card">
+<p><b>Rotação de Culturas:</b> Mantém o solo fértil e reduz pragas.</p>
+<p><b>Uso Consciente da Água:</b> Evita desperdício e protege recursos naturais.</p>
+<p><b>Energias Renováveis:</b> Uso de energia solar e biomassa nas propriedades.</p>
+<p><b>Preservação de Áreas Naturais:</b> Manutenção de matas ciliares e reservas legais.</p>
+</div>
+
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<img src="https://images.unsplash.com/photo-1472396961693-142e6e269027">
+</section>
+
+<!-- IMPORTÂNCIA -->
+<section>
+<h2>📊 Importância do Agro Sustentável</h2>
+<div class="card">
+<p>✔ Garante alimento para as futuras gerações.</p>
+<p>✔ Protege o meio ambiente.</p>
+<p>✔ Mantém a economia forte.</p>
+<p>✔ Reduz impactos ambientais.</p>
+</div>
+</section>
+
+<!-- QUIZ -->
+<section>
+<h2>❓ Quiz Interativo</h2>
+<div class="card">
+
+<p>1) O que ajuda a economizar água na agricultura?</p>
+<button onclick="quiz(1)">Desmatamento</button>
+<button onclick="quiz(2)">Irrigação inteligente</button>
+
+<p>2) O que mantém o solo saudável?</p>
+<button onclick="quiz(3)">Rotação de culturas</button>
+<button onclick="quiz(4)">Queimadas</button>
+
+<br><br>
+<p id="resultadoQuiz"></p>
+<p id="pontuacao"></p>
+
+</div>
+</section>
+
+<footer>
+<p>Projeto Escolar - 2026 🌱</p>
+</footer>
+
+<script>
+let pontos = 0;
+
+function quiz(resposta){
+    if(resposta == 2 || resposta == 3){
+        pontos++;
+        document.getElementById("resultadoQuiz").innerHTML = "✅ Resposta correta!";
+    } else {
+        document.getElementById("resultadoQuiz").innerHTML = "❌ Resposta incorreta!";
+    }
+    document.getElementById("pontuacao").innerHTML = "Pontuação: " + pontos;
+}
+</script>
+
+</body>
+</html>
